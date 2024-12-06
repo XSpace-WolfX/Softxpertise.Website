@@ -1,7 +1,0 @@
-[build]
-  command = "dotnet publish -c Release -o dist"
-  publish = "dist/wwwroot"
-
-[context.production.environment]
-  DOTNET_ROOT = "/opt/buildhome/.dotnet/"
-  PATH = "/opt/buildhome/.dotnet/:${PATH}"
