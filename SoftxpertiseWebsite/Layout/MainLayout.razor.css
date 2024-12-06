@@ -1,0 +1,141 @@
+/* #region General */
+
+main {
+    flex: 1;
+}
+
+svg {
+    width: 160px;
+}
+
+/* #endregion */
+
+/* #region Class */
+
+.footer {
+    background: linear-gradient(to bottom, #24356a, #1b2a4a);
+    color: white;
+    margin-top: 2rem;
+}
+
+.footer a {
+    color: #1eb1c4; /* Lien bleu clair */
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #1595a8; /* Couleur au survol */
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer .padding {
+    padding-right: 7rem;
+}
+
+.menu {
+    background-color: #24356a;
+    z-index: 3;
+}
+
+.pad-top {
+    padding-top: 2rem;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2); /* Agrandissement au survol */
+}
+
+/* #endregion */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+}
+
+@media (max-width: 768px) {
+    /* #region Class */
+
+    .footer .padding {
+        padding-right: 0;
+    }
+
+    .footer .row > div {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    /* #endregion */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+}
+
+@media (min-width: 641px) {
+    /* #region Class */
+
+    /* Horizontal menu display */
+    .menu {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+    }
+
+    .page {
+        flex-direction: column;
+    }
+
+    /* #endregion */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* #region Class */
+
+    .menu {
+        padding: 0 4rem;
+    }
+
+    /* #endregion */
+}
+
+/* Extra Extra large devices (very large laptops and desktops, 1440px and up) */
+@media (min-width: 1440px) {
+    /* #region Class */
+
+    .menu {
+        padding: 0 9.75rem;
+    }
+
+    /* #endregion */
+}

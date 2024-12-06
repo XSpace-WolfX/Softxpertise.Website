@@ -1,0 +1,138 @@
+﻿/* #region Class */
+
+.introduction {
+    background-image: url('images/background_home.svg');
+    background-position: center; /* Centre l'image dans la section */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-size: cover; /* Ajuste l'image pour qu'elle remplisse la section */
+    color: black; /* Pour garantir que le texte est lisible */
+    padding: 100px 0; /* Ajoute un espacement vertical */
+    position: relative; /* Utile si tu veux ajouter des éléments par-dessus */
+}
+
+.introduction::before {
+    background: rgba(255, 255, 255, 0.4); /* Ajoute une couche sombre pour le contraste */
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* Place la couche sombre sous le texte */
+}
+
+.introduction .btn-primary {
+    border-radius: 8px; /* Ajoute un effet de bord arrondi */
+    display: inline-block; /* Assure un affichage propre */
+    font-size: 1.5rem; /* Augmente la taille du texte */
+    padding: 15px 40px; /* Augmente le padding (espacement interne) */
+    transition: transform 0.2s ease-in-out;
+    width: auto; /* Supprime toute contrainte de largeur */
+}
+
+.introduction .btn-primary:hover {
+    transform: scale(1.1); /* Légèrement plus grand au survol */
+}
+
+.introduction .container {
+    position: relative;
+    z-index: 2; /* Place le contenu au-dessus de l'image et de la couche sombre */
+}
+
+.introduction p {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.services {
+    background: linear-gradient(to right, #f5faff, #e9f7fc);
+    margin-top: 2rem;
+}
+
+.services .btn-primary {
+    border-radius: 8px; /* Ajoute un effet de bord arrondi */
+    display: inline-block; /* Assure un affichage propre */
+    font-size: 1.5rem; /* Augmente la taille du texte */
+    padding: 15px 40px; /* Augmente le padding (espacement interne) */
+    transition: transform 0.2s ease-in-out;
+    width: auto; /* Supprime toute contrainte de largeur */
+}
+
+.services .btn-primary:hover {
+    transform: scale(1.1); /* Légèrement plus grand au survol */
+}
+
+.service-card {
+    border: none; /* Supprime les bordures */
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre renforcée au survol */
+    transform: translateY(-10px); /* Légère élévation au survol */
+}
+
+.service-card .card-title {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.service-card .card-text {
+    color: #666;
+}
+
+/* Icônes dans les Cartes */
+.service-card i {
+    color: #1eb1c4; /* Couleur principale */
+    transition: color 0.3s ease;
+}
+
+.service-card:hover i {
+    color: #1595a8; /* Changement de couleur au survol */
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.why-choose-us {
+    background-color: #f8f9fa; /* Couleur de fond douce */
+    margin-top: 2rem;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.feature-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre renforcée au survol */
+    transform: translateY(-10px); /* Légère élévation au survol */
+}
+
+.feature-card .card-body {
+    text-align: center;
+}
+
+.feature-card .card-title {
+    color: #24356a; /* Titre en bleu foncé */
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.feature-card p {
+    color: #666; /* Couleur de texte gris */
+    font-size: 1rem;
+}
+
+/* #endregion */

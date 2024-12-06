@@ -1,0 +1,88 @@
+﻿.btn-outline-primary {
+    border-radius: 8px; /* Coins arrondis */
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1eb1c4;
+    color: #fff; /* Texte blanc au survol */
+}
+
+.card {
+    animation: fadeInUp 0.6s ease forwards;
+    border: none;
+    border-radius: 10px; /* Coins arrondis */
+    margin-bottom: 2rem; /* Espace entre les cartes */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Élève la carte au survol */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre renforcée */
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:hover i {
+    color: #1595a8; /* Changement de couleur au survol */
+    transform: scale(1.2); /* Agrandissement au survol */
+}
+
+.card-body i {
+    color: #1eb1c4; /* Couleur primaire pour les icônes */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.row > div:not(:last-child) {
+    border-right: 1px solid #ddd; /* Ligne fine entre les colonnes */
+}
+
+.services {
+    background: linear-gradient(to right, #f8f9fa, #e9f7fc); /* Doux dégradé */
+    padding: 3rem 0; /* Espacement vertical */
+}
+
+.services .btn-primary {
+    border-radius: 8px; /* Ajoute un effet de bord arrondi */
+    display: inline-block; /* Assure un affichage propre */
+    font-size: 1rem; /* Augmente la taille du texte */
+    padding: 15px 40px; /* Augmente le padding (espacement interne) */
+    transition: transform 0.2s ease-in-out;
+    width: auto; /* Supprime toute contrainte de largeur */
+}
+
+.services .btn-primary:hover {
+    transform: scale(1.1); /* Légèrement plus grand au survol */
+}
+
+.services .intro {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    row > div:not(:last-child) {
+        border-right: none; /* Supprime la ligne pour les petits écrans */
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

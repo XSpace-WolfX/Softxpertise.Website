@@ -1,0 +1,6 @@
+@Softxpertise.API.EmailHandler_HostAddress = http://localhost:5194
+
+GET {{Softxpertise.API.EmailHandler_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
