@@ -1,7 +1,0 @@
-[build]
-  publish = "wwwroot" # Remplacez "dist" par le dossier où sont générés vos fichiers (comme "wwwroot" pour Blazor).
-
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
