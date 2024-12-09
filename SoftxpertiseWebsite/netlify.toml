@@ -2,6 +2,7 @@
   publish = "wwwroot" # Remplacez "dist" par le dossier où sont générés vos fichiers (comme "wwwroot" pour Blazor).
 
 [[redirects]]
-  from = "/defaultsite/*"
+  from = "/defaultsite"
   to = "/"
   status = 301
+  force = false
