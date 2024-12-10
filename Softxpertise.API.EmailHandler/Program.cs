@@ -16,8 +16,6 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
-// Ajouter les services nécessaires pour l'API
-builder.Services.AddControllers();
 
 var app = builder.Build();
 
