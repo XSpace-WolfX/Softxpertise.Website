@@ -26,7 +26,7 @@ namespace Softxpertise.API.EmailHandler.Controllers
 				try
 				{
 					await smtp.ConnectAsync("smtp-mail.outlook.com", 587, false);
-					await smtp.AuthenticateAsync("contact@softxpertise.com", "your-email-password");
+					await smtp.AuthenticateAsync("contact@softxpertise.com", "");
 					await smtp.SendAsync(email);
 					await smtp.DisconnectAsync(true);
 					return Ok("Email sent successfully.");
