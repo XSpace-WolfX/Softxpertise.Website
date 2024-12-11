@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Softxpertise.API.EmailHandler.Controllers
 {
-	[Route("api/[controller]")]
 	[ApiController]
-	public class ContactController : ControllerBase
+    [Route("api/[controller]")]
+    public class ContactController : ControllerBase
 	{
 		[HttpPost("send")]
 		public async Task<IActionResult> SendEmail([FromBody] ContactFormModel model)
@@ -14,7 +14,7 @@ namespace Softxpertise.API.EmailHandler.Controllers
 			if (ModelState.IsValid)
 			{
 				var email = new MimeMessage();
-				email.From.Add(new MailboxAddress("Softxpertise", "contact@softxpertise.com"));
+				email.From.Add(new MailboxAddress("Softxpertise", "corentin.beck@softxpertise.com"));
 				email.To.Add(new MailboxAddress("Softxpertise", "contact@softxpertise.com"));
 				email.Subject = model.Subject;
 				email.Body = new TextPart("plain")
@@ -26,7 +26,7 @@ namespace Softxpertise.API.EmailHandler.Controllers
 				try
 				{
 					await smtp.ConnectAsync("smtp-mail.outlook.com", 587, false);
-					await smtp.AuthenticateAsync("contact@softxpertise.com", "");
+					await smtp.AuthenticateAsync("corentin.beck@softxpertise.com", "K4t_r1na(<3)@");
 					await smtp.SendAsync(email);
 					await smtp.DisconnectAsync(true);
 					return Ok("Email sent successfully.");
