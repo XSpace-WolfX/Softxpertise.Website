@@ -1,71 +1,49 @@
-using MailKit.Net.Smtp;
-using MimeKit;
 using Microsoft.AspNetCore.Mvc;
-using MailKit.Security;
+using Softxpertise.API.EmailHandler.Services;
 using System.ComponentModel.DataAnnotations;
-using System;
+
 
 namespace Softxpertise.API.EmailHandler.Controllers
 {
-	[ApiController]
+    [ApiController]
     [Route("api/[controller]")]
     public class ContactController : ControllerBase
-	{
-		[HttpPost("send")]
-		public async Task<IActionResult> SendEmail([FromBody] ContactFormModel model)
-		{
-			if (ModelState.IsValid)
-			{
-				var email = new MimeMessage();
-				email.From.Add(new MailboxAddress("Softxpertise", "corentin.beck@softxpertise.com"));
-				email.To.Add(new MailboxAddress("Softxpertise", "contact@softxpertise.com"));
-				email.Subject = model.Subject;
-                email.Body = new TextPart("plain")
-                {
-                    Text = $@"
-						Name: {model.Name}
-						Email: {model.Email}
-						Subject: {model.Subject}
+    {
+        private readonly EmailService _emailService;
 
-						Message:
-						{model.Message}
-					"
-                };
+        public ContactController(EmailService emailService)
+        {
+            _emailService = emailService;
+        }
 
-                using var smtp = new SmtpClient();
-				try
-				{
-                    Console.WriteLine("Connecting to SMTP...");
-                    await smtp.ConnectAsync("smtp-mail.outlook.com", 587, SecureSocketOptions.StartTls);
-                    Console.WriteLine("Connected.");
-                    Console.WriteLine("Authenticating...");
-                    // Récupération du mot de passe depuis la variable d'environnement
-                    var smtpPassword = Environment.GetEnvironmentVariable("SMTP_PASSWORD");
+        [HttpPost("send")]
+        public async Task<IActionResult> SendContactForm([FromBody] ContactFormRequest request)
+        {
+            if (request == null || string.IsNullOrWhiteSpace(request.UserEmail) || string.IsNullOrWhiteSpace(request.UserMessage))
+            {
+                return BadRequest("Invalid contact form submission.");
+            }
 
-                    // Vérification si le mot de passe est bien récupéré
-                    if (string.IsNullOrEmpty(smtpPassword))
-                    {
-                        return StatusCode(500, "SMTP password not configured.");
-                    }
+            try
+            {
+                await _emailService.SendContactFormAsync(request.UserName, request.UserEmail, request.UserMessage);
+                return Ok("Contact form submitted successfully.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error submitting contact form: {ex.Message}");
+            }
+        }
+    }
 
-                    await smtp.AuthenticateAsync("corentin.beck@softxpertise.com", smtpPassword);
-                    Console.WriteLine("Authenticated.");
-                    Console.WriteLine("Sending email...");
-                    await smtp.SendAsync(email);
-                    Console.WriteLine("Email sent successfully.");
-                    await smtp.DisconnectAsync(true);
-					return Ok("Email sent successfully.");
-				}
-				catch (Exception ex)
-				{
-					return StatusCode(500, $"Failed to send email: {ex.Message}");
-				}
-			}
-			return BadRequest("Invalid data.");
-		}
-	}
+    public class ContactFormRequest
+    {
+        public string UserName { get; set; }
+        public string UserEmail { get; set; }
+        public string UserMessage { get; set; }
+    }
 
-	public class ContactFormModel
+    public class ContactFormModel
 	{
         [Required]
         [StringLength(50, MinimumLength = 2)]

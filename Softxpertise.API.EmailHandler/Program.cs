@@ -1,4 +1,12 @@
+using Softxpertise.API.EmailHandler.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add secrets configuration during development
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddUserSecrets<Program>();
+}
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -14,6 +22,17 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
+});
+
+// Register EmailService with secret configuration
+builder.Services.AddSingleton(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var graphApiSection = configuration.GetSection("GraphApi");
+    var tenantId = graphApiSection["TenantId"];
+    var clientId = graphApiSection["ClientId"];
+    var clientSecret = graphApiSection["ClientSecret"];
+    return new EmailService(tenantId, clientId, clientSecret, "contact@softxpertise.com");
 });
 
 var app = builder.Build();
