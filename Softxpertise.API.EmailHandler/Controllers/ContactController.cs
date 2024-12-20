@@ -26,7 +26,7 @@ namespace Softxpertise.API.EmailHandler.Controllers
 
             try
             {
-                await _emailService.SendContactFormAsync(request.UserName, request.UserEmail, request.UserMessage);
+                await _emailService.SendContactFormAsync(request.UserName, request.UserSubject, request.UserEmail, request.UserMessage);
                 return Ok("Contact form submitted successfully.");
             }
             catch (Exception ex)
@@ -38,9 +38,10 @@ namespace Softxpertise.API.EmailHandler.Controllers
 
     public class ContactFormRequest
     {
-        public string UserName { get; set; }
-        public string UserEmail { get; set; }
-        public string UserMessage { get; set; }
+        public string UserName { get; set; } = string.Empty;
+        public string UserSubject { get; set; } = string.Empty;
+        public string UserEmail { get; set; } = string.Empty;
+        public string UserMessage { get; set; } = string.Empty;
     }
 
     public class ContactFormModel

@@ -16,7 +16,7 @@ namespace Softxpertise.API.EmailHandler.Services
             _fixedEmail = fixedEmail; // Votre adresse email fixe pour envoyer les messages
         }
 
-        public async Task SendContactFormAsync(string userName, string userEmail, string userMessage)
+        public async Task SendContactFormAsync(string userName, string userSubject, string userEmail, string userMessage)
         {
             var message = new Message
             {
@@ -27,6 +27,7 @@ namespace Softxpertise.API.EmailHandler.Services
                     Content = $@"
                     <h3>New Contact Form Submission</h3>
                     <p><strong>Name:</strong> {userName}</p>
+                    <p><strong>Subject:</strong> {userSubject}</p>
                     <p><strong>Email:</strong> {userEmail}</p>
                     <p><strong>Message:</strong></p>
                     <p>{userMessage}</p>
