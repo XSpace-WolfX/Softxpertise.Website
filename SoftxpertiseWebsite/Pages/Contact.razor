@@ -62,7 +62,7 @@
             var client = HttpClientFactory.CreateClient("ApiClient");
 
             // Envoyer les données du formulaire à l'API
-            var response = await client.PostAsJsonAsync("api/contact/send", formModel);
+            var response = await client.PostAsJsonAsync("api/Contact/send", formModel);
 
             if (response.IsSuccessStatusCode)
             {
