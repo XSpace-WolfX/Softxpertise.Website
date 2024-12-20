@@ -21,7 +21,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowBlazor", policy =>
     {
-        policy.WithOrigins("https://softxpertise.com/", // Application déployée
+        policy.WithOrigins("https://softxpertise.com/",
+                           "https://softxpertise.com",// Application déployée
                            "http://localhost:5000",
                            "http://localhost:5001",
                            "https://localhost:7181") // Environnement local
