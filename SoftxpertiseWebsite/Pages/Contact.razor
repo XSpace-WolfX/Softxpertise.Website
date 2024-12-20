@@ -47,9 +47,9 @@
 }
 
 @code {
-    private ContactModel formModel = new();
-    private string? responseMessage;
-    private bool isSubmitting = false;
+    private ContactModel formModel = new(); // Modèle du formulaire
+    private string? responseMessage;       // Message de réponse
+    private bool isSubmitting = false;     // Indique si le formulaire est en cours d'envoi
 
     private async Task SubmitForm()
     {
@@ -58,25 +58,20 @@
 
         try
         {
-            // Créer le HttpClient pour l'API
-            var client = HttpClientFactory.CreateClient("ApiClient");
+            // Appeler le service pour envoyer les données du formulaire
+            var (success, message) = await ContactService.SubmitContactForm(formModel);
 
-            // Envoyer les données du formulaire à l'API
-            var response = await client.PostAsJsonAsync("api/Contact/send", formModel);
+            responseMessage = message;
 
-            if (response.IsSuccessStatusCode)
+            if (success)
             {
-                responseMessage = "Your message has been sent successfully!";
-                formModel = new ContactModel(); // Réinitialise le formulaire
-            }
-            else
-            {
-                responseMessage = "Failed to send your message. Please try again.";
+                // Réinitialiser le formulaire si l'envoi a réussi
+                formModel = new ContactModel();
             }
         }
         catch (Exception ex)
         {
-            responseMessage = $"An error occurred: {ex.Message}";
+            responseMessage = $"An unexpected error occurred: {ex.Message}";
         }
         finally
         {
