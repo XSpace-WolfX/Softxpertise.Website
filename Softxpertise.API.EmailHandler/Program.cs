@@ -19,9 +19,11 @@ builder.Services.AddSwaggerGen();
 // Add CORS to allow requests from Blazor WebAssembly
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowBlazor", policy =>
     {
-        policy.WithOrigins()
+        policy.WithOrigins("https://softxpertise.com/", // Application déployée
+                           "http://localhost:5000",
+                           "http://localhost:5001") // Environnement local
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
@@ -50,7 +52,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 // Configurate CORS
-app.UseCors("AllowAll");
+app.UseCors("AllowBlazor");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
