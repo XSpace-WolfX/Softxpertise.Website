@@ -23,43 +23,50 @@
 
 <!-- Services Section -->
 <section class="services py-5">
-    <div class="container">
-        <h2 class="text-center mb-5 text-uppercase">Our Services</h2>
-        <div class="row">
-            <!-- Service 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card service-card shadow-sm text-center">
-                    <div class="card-body">
-                        <i class="bi bi-laptop display-4 text-primary mb-3"></i>
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Modern websites and web applications using .NET, Blazor, and more.</p>
+    <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner row">
+            <div class="carousel-item active">
+                <div class="mb-4">
+                    <div class="card service-card shadow-sm text-center">
+                        <div class="card-body">
+                            <i class="bi bi-laptop display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Modern websites and web applications using .NET, Blazor, and more.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Service 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card service-card shadow-sm text-center">
-                    <div class="card-body">
-                        <i class="bi bi-window display-4 text-primary mb-3"></i>
-                        <h5 class="card-title">Desktop Applications</h5>
-                        <p class="card-text">Robust software solutions for Windows platforms.</p>
+            <div class="carousel-item">
+                <div class="mb-4">
+                    <div class="card service-card shadow-sm text-center">
+                        <div class="card-body">
+                            <i class="bi bi-window display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Desktop Applications</h5>
+                            <p class="card-text">Robust software solutions for Windows platforms.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Service 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card service-card shadow-sm text-center">
-                    <div class="card-body">
-                        <i class="bi bi-tools display-4 text-primary mb-3"></i>
-                        <h5 class="card-title">Maintenance & Support</h5>
-                        <p class="card-text">Technical support and updates for your existing applications.</p>
+            <div class="carousel-item">
+                <div class="mb-4">
+                    <div class="card service-card shadow-sm text-center">
+                        <div class="card-body">
+                            <i class="bi bi-tools display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Maintenance & Support</h5>
+                            <p class="card-text">Technical support and updates for your existing applications.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="button-container mt-5 text-center">
-            <a href="services" class="btn btn-primary btn-lg">Discover our services</a>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </section>
 

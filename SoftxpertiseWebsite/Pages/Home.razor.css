@@ -135,4 +135,43 @@
     font-size: 1rem;
 }
 
+.carousel-inner {
+    margin-left: 0;
+}
+
+.carousel-item .card {
+    max-width: 600px;  /*Limite la largeur des cartes */
+    margin: auto;  /*Centre la carte horizontalement */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: initial;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 123, 255, 0.8); /* Couleur de fond bleu translucide */
+    border-radius: 50%; /* Boutons arrondis */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    transform: scale(1.2); /* Agrandissement au survol */
+}
+
+/* Pour les petits écrans (par exemple, en dessous de 576px) */
+@media (max-width: 576px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
 /* #endregion */
