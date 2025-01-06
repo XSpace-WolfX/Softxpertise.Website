@@ -69,11 +69,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre renforcée au survol */
-    transform: translateY(-10px); /* Légère élévation au survol */
-}
-
 .service-card .card-title {
     font-weight: bold;
     margin-top: 15px;
