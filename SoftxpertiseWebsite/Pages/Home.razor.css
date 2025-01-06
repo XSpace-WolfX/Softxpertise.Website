@@ -21,7 +21,7 @@
     z-index: 1; /* Place la couche sombre sous le texte */
 }
 
-.introduction .btn-primary {
+.btn-primary {
     border-radius: 8px; /* Ajoute un effet de bord arrondi */
     display: inline-block; /* Assure un affichage propre */
     font-size: 1.5rem; /* Augmente la taille du texte */
@@ -30,7 +30,7 @@
     width: auto; /* Supprime toute contrainte de largeur */
 }
 
-.introduction .btn-primary:hover {
+.btn-primary:hover {
     transform: scale(1.1); /* Légèrement plus grand au survol */
 }
 
@@ -48,19 +48,6 @@
 .services {
     background: linear-gradient(to right, #f5faff, #e9f7fc);
     margin-top: 2rem;
-}
-
-.services .btn-primary {
-    border-radius: 8px; /* Ajoute un effet de bord arrondi */
-    display: inline-block; /* Assure un affichage propre */
-    font-size: 1.5rem; /* Augmente la taille du texte */
-    padding: 15px 40px; /* Augmente le padding (espacement interne) */
-    transition: transform 0.2s ease-in-out;
-    width: auto; /* Supprime toute contrainte de largeur */
-}
-
-.services .btn-primary:hover {
-    transform: scale(1.1); /* Légèrement plus grand au survol */
 }
 
 .service-card {
