@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\background_home.svg" />
     <Content Remove="wwwroot\_redirects" />
   </ItemGroup>
 
