@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Black.ttf" />
+    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Bold.ttf" />
+    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Light.ttf" />
+    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Medium.ttf" />
+    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Regular.ttf" />
     <Content Remove="wwwroot\images\background_home.svg" />
     <Content Remove="wwwroot\_redirects" />
   </ItemGroup>
