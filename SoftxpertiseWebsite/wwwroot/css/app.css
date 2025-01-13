@@ -143,6 +143,7 @@ p {
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/NovaSquare-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -150,6 +151,7 @@ p {
     font-style: normal;
     font-weight: 900; /* Black */
     src: url('../fonts/ZenKakuGothicNew-Black.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -157,6 +159,7 @@ p {
     font-style: normal;
     font-weight: 700; /* Bold */
     src: url('../fonts/ZenKakuGothicNew-Bold.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -164,6 +167,7 @@ p {
     font-style: normal;
     font-weight: 500; /* Medium */
     src: url('../fonts/ZenKakuGothicNew-Medium.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -171,6 +175,7 @@ p {
     font-style: normal;
     font-weight: normal; /* Regular */
     src: url('../fonts/ZenKakuGothicNew-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -178,6 +183,7 @@ p {
     font-style: normal;
     font-weight: 300; /* Light */
     src: url('../fonts/ZenKakuGothicNew-Light.ttf') format('truetype');
+    font-display: swap;
 }
 
 /* #endregion */
