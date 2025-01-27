@@ -15,16 +15,6 @@
     <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Medium.ttf" />
     <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Regular.ttf" />
     <Content Remove="wwwroot\images\background_home.svg" />
-    <Content Remove="wwwroot\_redirects" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="wwwroot\robots.txt" />
-    <_ContentIncludedByDefault Remove="wwwroot\_redirects" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\_redirects" />
   </ItemGroup>
 
   <ItemGroup>
