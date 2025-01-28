@@ -1,40 +1,41 @@
 ﻿@page "/contact"
 
+@using Microsoft.Extensions.Localization
 @using Softxpertise.Website.Models
+@using Softxpertise.Website.Resources
 @using Softxpertise.Website.Services
 
 @inject ContactService ContactService
 @inject IHttpClientFactory HttpClientFactory
+@inject IStringLocalizer<TextualLanguage> Localizer
 
-<PageTitle>Contact</PageTitle>
+<PageTitle>@Localizer["ContactPage"]</PageTitle>
 
 <section class="contact py-5">
     <div class="container mt-5">
-        <h2 class="text-center text-uppercase">Contact Us</h2>
-        <p class="text-center">
-            Have questions or need assistance? Fill out the form below, and we'll get back to you as soon as possible.
-        </p>
+        <h2 class="text-center text-uppercase">@Localizer["ContactTitle"]</h2>
+        <p class="text-center">@Localizer["ContactTitleText"]</p>
         <div class="card shadow-sm mt-4">
             <EditForm Model="@formModel" OnValidSubmit="SubmitForm">
                 <ValidationSummary />
                 <div class="form-group">
-                    <label for="userName">Name:</label>
+                    <label for="userName">@Localizer["ContactName"]:</label>
                     <InputText id="userName" @bind-Value="formModel.UserName" class="form-control" />
                 </div>
                 <div class="form-group mt-3">
-                    <label for="userEmail">Email:</label>
+                    <label for="userEmail">@Localizer["ContactEmail"]:</label>
                     <InputText id="userEmail" @bind-Value="formModel.UserEmail" class="form-control" />
                 </div>
                 <div class="form-group mt-3">
-                    <label for="userSubject">Subject</label>
+                    <label for="userSubject">@Localizer["ContactSubject"]:</label>
                     <InputText id="userSubject" @bind-Value="formModel.UserSubject" class="form-control" />
                 </div>
                 <div class="form-group mt-3">
-                    <label for="userMessage">Message:</label>
+                    <label for="userMessage">@Localizer["ContactMessage"]:</label>
                     <InputTextArea id="userMessage" @bind-Value="formModel.UserMessage" class="form-control" />
                 </div>
                 <button type="submit" class="btn btn-primary mt-4 w-100" disabled="@isSubmitting">
-                    @(isSubmitting ? "Sending..." : "Send")
+                    @(isSubmitting ? "Sending..." : Localizer["ContactButton"])
                 </button>
             </EditForm>
         </div>

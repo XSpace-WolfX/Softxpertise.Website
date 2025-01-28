@@ -5,23 +5,25 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 	<BlazorWebAssemblyEnableCompression>true</BlazorWebAssemblyEnableCompression>
+	<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
 	<PublishTrimmed>true</PublishTrimmed>
   </PropertyGroup>
-
+	
   <ItemGroup>
-    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Black.ttf" />
-    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Bold.ttf" />
-    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Light.ttf" />
-    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Medium.ttf" />
-    <Content Remove="wwwroot\fonts\ZenKakuGothicNew-Regular.ttf" />
-    <Content Remove="wwwroot\images\background_home.svg" />
+	<Content Remove="wwwroot\fonts\ZenKakuGothicNew-Black.ttf" />
+	<Content Remove="wwwroot\fonts\ZenKakuGothicNew-Bold.ttf" />
+	<Content Remove="wwwroot\fonts\ZenKakuGothicNew-Light.ttf" />
+	<Content Remove="wwwroot\fonts\ZenKakuGothicNew-Medium.ttf" />
+	<Content Remove="wwwroot\fonts\ZenKakuGothicNew-Regular.ttf" />
+	<Content Remove="wwwroot\images\background_home.svg" />
   </ItemGroup>
-
+	
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.12" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.1" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.12" />
   </ItemGroup>
 
 </Project>

@@ -1,27 +1,27 @@
 ﻿@page "/"
 @page "/defaultsite"
 
-<PageTitle>Home</PageTitle>
+@using Microsoft.Extensions.Localization
+@using Softxpertise.Website.Resources
+
+@inject IStringLocalizer<TextualLanguage> Localizer
+
+<PageTitle>@Localizer["HomePage"]</PageTitle>
 
 <!-- Introduction Section -->
 <section class="introduction">
     <div class="container">
-        <h1 class="text-uppercase">Empowering Your Digital Solutions</h1>
-        <p>
-            In today’s fast-paced digital landscape, the right solutions go beyond functionality — they empower businesses to thrive. At the core of every innovative tool lies 
-            a thoughtful combination of reliability, agility, and human ingenuity. We create digital experiences that are seamless, secure, and future-ready. Whether you’re streamlining 
-            processes, enhancing customer engagement, or building for tomorrow, we ensure your digital foundation is not just strong but transformative. Because empowering your solutions 
-            means empowering our future.
-        </p>
-    </div>
-    <div class="button-container d-flex justify-content-center align-items-center">
-        <a href="contact" class="btn btn-primary mt-4">Get in Touch</a>
+        <h1 class="text-uppercase">@Localizer["HomeTitle"]</h1>
+        <p>@Localizer["HomeTitleText"]</p>
+        <div class="button-container d-flex justify-content-center align-items-center">
+            <a href="contact" class="btn btn-primary mt-4">@Localizer["HomeContactButton"]</a>
+        </div>
     </div>
 </section>
 
 <!-- Services Section -->
 <section class="services py-5">
-    <h2 class="mb-4 text-uppercase text-center">Our Expertise, Your Advantage</h2>
+    <h2 class="mb-4 text-uppercase text-center">@Localizer["HomeTitleService"]</h2>
     <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="true" data-bs-interval="5000">
         <div class="carousel-inner row">
             <div class="carousel-item active">
@@ -29,10 +29,10 @@
                     <div class="card service-card shadow-sm text-center">
                         <div class="card-body">
                             <i class="bi bi-globe display-4 text-primary mb-3"></i>
-                            <h5 class="card-title">High-Performance Web Applications</h5>
-                            <p class="card-text">Build fast, modern, and scalable web applications with cutting-edge technology. Discover how we can transform your online presence.</p>
+                            <h5 class="card-title">@Localizer["CardTitle1"]</h5>
+                            <p class="card-text">@Localizer["HomeCardText1"].</p>
                             <div class="button-container d-flex justify-content-center align-items-center">
-                                <a href="services" class="btn btn-primary mt-4">Learn More</a>
+                                <a href="services" class="btn btn-primary mt-4">@Localizer["HomeCardButton"]</a>
                             </div>
                         </div>
                     </div>
@@ -43,10 +43,10 @@
                     <div class="card service-card shadow-sm text-center">
                         <div class="card-body">
                             <i class="bi bi-laptop display-4 text-primary mb-3"></i>
-                            <h5 class="card-title">Custom Software Solutions</h5>
-                            <p class="card-text">Get tailored software solutions designed to streamline your workflows and boost productivity. Let’s bring your vision to life.</p>
+                            <h5 class="card-title">@Localizer["CardTitle2"]</h5>
+                            <p class="card-text">@Localizer["HomeCardText2"]</p>
                             <div class="button-container d-flex justify-content-center align-items-center">
-                                <a href="services" class="btn btn-primary mt-4">Learn More</a>
+                                <a href="services" class="btn btn-primary mt-4">@Localizer["HomeCardButton"]</a>
                             </div>
                         </div>
                     </div>
@@ -57,10 +57,10 @@
                     <div class="card service-card shadow-sm text-center">
                         <div class="card-body">
                             <i class="bi bi-search display-4 text-primary mb-3"></i>
-                            <h5 class="card-title">IT Systems Audit and Best Practice Analysis</h5>
-                            <p class="card-text">Secure and optimize your IT systems with our in-depth audits and best practice recommendations. Ensure your business runs smoothly.</p>
+                            <h5 class="card-title">@Localizer["CardTitle3"]</h5>
+                            <p class="card-text">@Localizer["HomeCardText3"]</p>
                             <div class="button-container d-flex justify-content-center align-items-center">
-                                <a href="services" class="btn btn-primary mt-4">Learn More</a>
+                                <a href="services" class="btn btn-primary mt-4">@Localizer["HomeCardButton"]</a>
                             </div>
                         </div>
                     </div>
@@ -71,10 +71,10 @@
                     <div class="card service-card shadow-sm text-center">
                         <div class="card-body">
                             <i class="bi bi-lightbulb display-4 text-primary mb-3"></i>
-                            <h5 class="card-title">Exploring AI with ML.NET</h5>
-                            <p class="card-text">Unlock the potential of AI with our innovative solutions powered by ML.NET. Automate tasks and enhance decision-making effortlessly.</p>
+                            <h5 class="card-title">@Localizer["CardTitle4"]</h5>
+                            <p class="card-text">@Localizer["HomeCardText4"]</p>
                             <div class="button-container d-flex justify-content-center align-items-center">
-                                <a href="services" class="btn btn-primary mt-4">Learn More</a>
+                                <a href="services" class="btn btn-primary mt-4">@Localizer["HomeCardButton"]</a>
                             </div>
                         </div>
                     </div>
@@ -95,14 +95,14 @@
 <!-- Why choose us Section -->
 <section class="why-choose-us py-5">
     <div class="container text-center">
-        <h2 class="mb-4 text-uppercase">Why Choose Softxpertise?</h2>
+        <h2 class="mb-4 text-uppercase">@Localizer["HomeWhyTitle"]</h2>
         <div class="row">
             <div class="col-md-6 mb-4">
                 <div class="card feature-card">
                     <div class="card-body">
                         <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
-                        <h5 class="card-title">Transparency & Communication</h5>
-                        <p>We prioritize honesty and open communication, ensuring you’re involved and informed every step of the way.</p>
+                        <h5 class="card-title">@Localizer["HomeWhyCardTitle1"]</h5>
+                        <p>@Localizer["HomeWhyCardText1"]</p>
                     </div>
                 </div>
             </div>
@@ -110,8 +110,8 @@
                 <div class="card feature-card">
                     <div class="card-body">
                         <i class="bi bi-lightbulb display-4 text-primary mb-3"></i>
-                        <h5 class="card-title">Tailored & Flexible Solutions</h5>
-                        <p>We provide tailored solutions with the flexibility to adapt seamlessly to your evolving needs, ensuring a perfect fit for your goals.</p>
+                        <h5 class="card-title">@Localizer["HomeWhyCardTitle2"]</h5>
+                        <p>@Localizer["HomeWhyCardText2"]</p>
                     </div>
                 </div>
             </div>
@@ -119,8 +119,8 @@
                 <div class="card feature-card">
                     <div class="card-body">
                         <i class="bi bi-clock-fill display-4 text-primary mb-3"></i>
-                        <h5 class="card-title">Efficient & Reliable Delivery</h5>
-                        <p>We deliver efficient, high-quality results on time and within scope, respecting the value of your resources.</p>
+                        <h5 class="card-title">@Localizer["HomeWhyCardTitle3"]</h5>
+                        <p>@Localizer["HomeWhyCardText3"]</p>
                     </div>
                 </div>
             </div>
@@ -128,14 +128,14 @@
                 <div class="card feature-card">
                     <div class="card-body">
                         <i class="bi bi-emoji-smile-fill display-4 text-primary mb-3"></i>
-                        <h5 class="card-title">Collaborative Partnerships</h5>
-                        <p>Your success is our success. We aim to build strong, collaborative relationships that stand the test of time.</p>
+                        <h5 class="card-title">@Localizer["HomeWhyCardTitle4"]</h5>
+                        <p>@Localizer["HomeWhyCardText4"]</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="button-container d-flex justify-content-center align-items-center">
-            <a href="contact" class="btn btn-primary mt-4">Let’s Talk</a>
+            <a href="contact" class="btn btn-primary mt-4">@Localizer["HomeWhyButton"]</a>
         </div>
     </div>
 </section>

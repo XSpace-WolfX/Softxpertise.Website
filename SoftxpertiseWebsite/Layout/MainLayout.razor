@@ -1,4 +1,9 @@
-﻿@inherits LayoutComponentBase
+﻿@using Microsoft.Extensions.Localization
+@using Softxpertise.Website.Resources
+
+@inherits LayoutComponentBase
+
+@inject IStringLocalizer<TextualLanguage> Localizer
 
 <div class="page">
     <div class="menu">
@@ -59,21 +64,21 @@
                     <path class="st2" d="M275.33,327.63v-66.24h-22.98v-5.89h52.26v5.89h-22.98v66.24H275.33z" />
                 </svg>
                 @* Displaying the white logo directly in SVG end *@
-                <p>Empowering your digital solutions with transparency, reliability, and collaborative partnerships.</p>
+                <p>@Localizer["FooterTitle"]</p>
             </div>
             <!-- Liens de Navigation -->
             <div class="col-md-4 pad-top">
-                <h5 class="text-uppercase">Quick Links</h5>
+                <h5 class="text-uppercase">@Localizer["FooterSubtitle1"]</h5>
                 <ul class="list-unstyled">
-                    <li><a href="/" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="/services" class="text-white text-decoration-none">Services</a></li>
-                    <li><a href="/contact" class="text-white text-decoration-none">Contact</a></li>
-                    <li><a href="/privacy" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="/" class="text-white text-decoration-none">@Localizer["HomePage"]</a></li>
+                    <li><a href="/services" class="text-white text-decoration-none">@Localizer["ServicePage"]</a></li>
+                    <li><a href="/contact" class="text-white text-decoration-none">@Localizer["ContactPage"]</a></li>
+                    <li><a href="/privacy" class="text-white text-decoration-none">@Localizer["PrivacyPolicyPage"]</a></li>
                 </ul>
             </div>
             <!-- Coordonnées et Réseaux -->
             <div class="col-md-4 pad-top">
-                <h5 class="text-uppercase">Get in Touch</h5>
+                <h5 class="text-uppercase">@Localizer["FooterSubtitle2"]</h5>
                 <p>Email: <a href="mailto:contact@softxpertise.com" class="text-white">contact@softxpertise.com</a></p>
                 <div class="social-icons mt-3">
                     <a href="https://linkedin.com" class="text-white me-3"><i class="bi bi-linkedin"></i></a>

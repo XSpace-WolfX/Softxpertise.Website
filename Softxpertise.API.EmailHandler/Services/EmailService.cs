@@ -59,6 +59,7 @@ namespace Softxpertise.API.EmailHandler.Services
             }
             catch (Exception ex)
             {
+                throw new Exception(ex.Message);
                 // log your exception here
             }
         }

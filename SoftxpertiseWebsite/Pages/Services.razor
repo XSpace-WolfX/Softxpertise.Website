@@ -1,28 +1,27 @@
 ﻿@page "/services"
 
-<PageTitle>Services</PageTitle>
+@using Microsoft.Extensions.Localization
+@using Softxpertise.Website.Resources
+
+@inject IStringLocalizer<TextualLanguage> Localizer
+
+<PageTitle>@Localizer["ServicePage"]</PageTitle>
 
 <section class="services py-5">
     <div class="container">
-        <h1 class="text-center text-uppercase">Our Services</h1>
-        <p class="intro text-center mb-5">
-            At Softxpertise, we specialize in crafting solutions that empower your digital journey. Explore our core services designed to meet your unique needs.
-        </p>
+        <h1 class="text-center text-uppercase">@Localizer["ServiceTitle"]</h1>
+        <p class="intro text-center mb-5">@Localizer["ServiceTitleText"]</p>
         <div class="row mt-4">
             <!-- Service 1 -->
             <div class="col-md-4">
                 <div class="card shadow-sm d-flex flex-column">
                     <div class="card-body text-center d-flex flex-column justify-content-evenly">
                         <i class="bi bi-globe display-4 text-primary mb-3"></i>
-                        <h5 class="card-title mt-2">High-Performance Web Applications</h5>
-                        <h6 class="card-subtitle text-muted mt-3">Fast, modern, and robust solutions tailored to your digital needs.</h6>
-                        <p class="card-text">
-                            By leveraging Blazor and .NET, we deliver web applications that combine <strong>optimal performance</strong>, <strong>modern interfaces</strong>, and 
-                            <strong>scalable architecture</strong>. Whether you need interactive tools, dynamic websites, or internal portals, our solutions are designed to meet your exact 
-                            needs while ensuring long-term reliability.
-                        </p>
+                        <h5 class="card-title mt-2">@Localizer["CardTitle1"]</h5>
+                        <h6 class="card-subtitle text-muted mt-3">@Localizer["ServiceCardSubtitle1"]</h6>
+                        <p class="card-text">@((MarkupString)Localizer["ServiceCardText1"].Value)</p>
                         <div class="button-container d-flex justify-content-center align-items-center">
-                            <a href="contact" class="btn btn-primary mt-auto">Get a Quote</a>
+                            <a href="contact" class="btn btn-primary mt-auto">@Localizer["ServiceCardButton"]</a>
                         </div>
                     </div>
                 </div>
@@ -32,15 +31,11 @@
                 <div class="card shadow-sm d-flex flex-column">
                     <div class="card-body text-center d-flex flex-column justify-content-evenly">
                         <i class="bi bi-laptop display-4 text-primary mb-3"></i>
-                        <h5 class="card-title mt-2">Custom Software Solutions</h5>
-                        <h6 class="card-subtitle text-muted mt-3">Transform your workflows with powerful and personalized software tools.</h6>
-                        <p class="card-text">
-                            We specialize in building <strong>custom cloud-based applications</strong> that address your specific challenges and goals. Whether you need a **business tool** to 
-                            streamline operations or a full-fledged <strong>Software-as-a-Service (SaaS) platform</strong>, our solutions combine <strong>scalability</strong>, 
-                            <strong>performance</strong>, and <strong>ease of use</strong>. We transform your ideas into reliable and future-ready software.
-                        </p>
+                        <h5 class="card-title mt-2">@Localizer["CardTitle2"]</h5>
+                        <h6 class="card-subtitle text-muted mt-3">@Localizer["ServiceCardSubtitle2"]</h6>
+                        <p class="card-text">@((MarkupString)Localizer["ServiceCardText2"].Value)</p>
                         <div class="button-container d-flex justify-content-center align-items-center">
-                            <a href="contact" class="btn btn-primary mt-auto">Get a Quote</a>
+                            <a href="contact" class="btn btn-primary mt-auto">@Localizer["ServiceCardButton"]</a>
                         </div>
                     </div>
                 </div>
@@ -50,15 +45,11 @@
                 <div class="card shadow-sm d-flex flex-column">
                     <div class="card-body text-center d-flex flex-column justify-content-evenly">
                         <i class="bi bi-search display-4 text-primary mb-3"></i>
-                        <h5 class="card-title mt-2">IT Systems Audit and Best Practice Analysis</h5>
-                        <h6 class="card-subtitle text-muted mt-3">Evaluate, optimize, and secure your information systems.</h6>
-                        <p class="card-text">
-                            At Softxpertise, we provide comprehensive <strong>audits of your information systems</strong> to assess performance, security, and efficiency. Through an in-depth 
-                            analysis of your current practices, we identify areas for improvement, eliminate vulnerabilities, and ensure your systems align with 
-                            <strong>industry standards</strong> and <strong>best practices</strong>.
-                        </p>
+                        <h5 class="card-title mt-2">@Localizer["CardTitle3"]</h5>
+                        <h6 class="card-subtitle text-muted mt-3">@Localizer["ServiceCardSubtitle3"]</h6>
+                        <p class="card-text">@((MarkupString)Localizer["ServiceCardText3"].Value)</p>
                         <div class="button-container d-flex justify-content-center align-items-center">
-                            <a href="contact" class="btn btn-primary mt-auto">Get a Quote</a>
+                            <a href="contact" class="btn btn-primary mt-auto">@Localizer["ServiceCardButton"]</a>
                         </div>
                     </div>
                 </div>
@@ -70,17 +61,13 @@
                         <!-- Icon Section -->
                         <i class="bi bi-lightbulb display-4 text-primary mb-3"></i>
                         <!-- Card Titles -->
-                        <h5 class="card-title mt-2">Exploring AI with ML.NET</h5>
-                        <h6 class="card-subtitle text-muted mt-3">Building the foundation for intelligent solutions.</h6>
+                        <h5 class="card-title mt-2">@Localizer["CardTitle4"]</h5>
+                        <h6 class="card-subtitle text-muted mt-3">@Localizer["ServiceCardSubtitle4"]</h6>
                         <!-- Card Text -->
-                        <p class="card-text">
-                            At Softxpertise, we are actively developing our expertise in <strong>machine learning</strong> with <strong>ML.NET</strong>, Microsoft's framework for integrating AI 
-                            into applications. Our goal is to leverage this technology to create <strong>smart tools</strong> that enhance decision-making and automate complex tasks in the 
-                            future.
-                        </p>
+                        <p class="card-text">@((MarkupString)Localizer["ServiceCardText4"].Value)</p>
                         <!-- Button Section -->
                         <div class="button-container d-flex justify-content-center align-items-center">
-                            <a href="contact" class="btn btn-primary mt-auto">Stay Updated</a>
+                            <a href="contact" class="btn btn-primary mt-auto">@Localizer["ServiceCardUpdateButton"]</a>
                         </div>
                     </div>
                 </div>

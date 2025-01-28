@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CardTitle1" xml:space="preserve">
+    <value>Applications Web Haute Performance</value>
+  </data>
+  <data name="CardTitle2" xml:space="preserve">
+    <value>Solutions Logiciels Personnalisés</value>
+  </data>
+  <data name="CardTitle3" xml:space="preserve">
+    <value>Audit des Systèmes Informatiques et Analyse des Meilleures Pratiques</value>
+  </data>
+  <data name="CardTitle4" xml:space="preserve">
+    <value>Explorer l’IA avec ML.NET</value>
+  </data>
+  <data name="ContactButton" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ContactMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="ContactPage" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="ContactSubject" xml:space="preserve">
+    <value>Sujet</value>
+  </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="ContactTitleText" xml:space="preserve">
+    <value>Vous avez des questions ou besoin d’aide ? Remplissez le formulaire ci-dessous, et nous vous répondrons dans les plus brefs délais.</value>
+  </data>
+  <data name="FooterSubtitle1" xml:space="preserve">
+    <value>Liens rapides</value>
+  </data>
+  <data name="FooterSubtitle2" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="FooterTitle" xml:space="preserve">
+    <value>Optimiser vos solutions numériques grâce à la transparence, la fiabilité et des partenariats collaboratifs.</value>
+  </data>
+  <data name="HomeCardButton" xml:space="preserve">
+    <value>En Savoir Plus</value>
+  </data>
+  <data name="HomeCardText1" xml:space="preserve">
+    <value>Créez des applications web modernes, rapides et évolutives grâce à des technologies de pointe. Découvrez comment nous pouvons transformer votre présence en ligne.</value>
+  </data>
+  <data name="HomeCardText2" xml:space="preserve">
+    <value>Obtenez des solutions logicielles sur mesure conçues pour simplifier vos flux de travail et augmenter votre productivité. Donnons vie à votre vision.</value>
+  </data>
+  <data name="HomeCardText3" xml:space="preserve">
+    <value>Sécurisez et optimisez vos systèmes informatiques grâce à nos audits approfondis et nos recommandations basées sur les meilleures pratiques. Assurez le bon fonctionnement de votre entreprise.</value>
+  </data>
+  <data name="HomeCardText4" xml:space="preserve">
+    <value>Déployez le potentiel de l’intelligence artificielle grâce à nos solutions innovantes basées sur ML.NET. Automatisez des tâches et améliorez la prise de décision sans effort.</value>
+  </data>
+  <data name="HomeCardText5" xml:space="preserve">
+    <value>Nous optimisons vos opérations en intégrant des API et en automatisant les tâches répétitives, garantissant une communication fluide entre vos outils et une gestion plus performante de votre activité.</value>
+  </data>
+  <data name="HomeContactButton" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Accueil</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>Donner Vie à Vos Solutions Digitales</value>
+  </data>
+  <data name="HomeTitleService" xml:space="preserve">
+    <value>Notre Expertise, Votre Avantage</value>
+  </data>
+  <data name="HomeTitleText" xml:space="preserve">
+    <value>Dans le paysage numérique d’aujourd’hui, les bonnes solutions vont au-delà de la simple fonctionnalité : elles permettent aux entreprises de prospérer. Au cœur de chaque outil innovant réside une combinaison réfléchie de fiabilité, d’agilité et d’ingéniosité humaine. Nous créons des expériences digitales fluides, sécurisées et prêtes pour l’avenir. Que vous souhaitiez optimiser vos processus, améliorer l’engagement de vos clients ou construire votre lendemain, nous garantissons que vos bases sont non seulement solides, mais aussi transformatrices. Car donner du pouvoir à vos solutions, c’est donner du pouvoir à notre avenir.</value>
+  </data>
+  <data name="HomeWhyButton" xml:space="preserve">
+    <value>Parlons-en</value>
+  </data>
+  <data name="HomeWhyCardText1" xml:space="preserve">
+    <value>Nous privilégions l’honnêteté et une communication ouverte, vous tenant impliqué et informé à chaque étape.</value>
+  </data>
+  <data name="HomeWhyCardText2" xml:space="preserve">
+    <value>Nous proposons des solutions sur mesure, capables de s’adapter harmonieusement à vos besoins évolutifs, pour garantir une adéquation à vos objectifs.</value>
+  </data>
+  <data name="HomeWhyCardText3" xml:space="preserve">
+    <value>Nous livrons des résultats efficaces et de haute qualité dans les délais et budgets définis, en respectant la valeur de vos ressources.</value>
+  </data>
+  <data name="HomeWhyCardText4" xml:space="preserve">
+    <value>Votre succès est notre succès. Nous visons à établir des relations solides et collaboratives qui résistent à l’épreuve du temps.</value>
+  </data>
+  <data name="HomeWhyCardTitle1" xml:space="preserve">
+    <value>Transparence et Communication</value>
+  </data>
+  <data name="HomeWhyCardTitle2" xml:space="preserve">
+    <value>Solutions Personnalisées et Flexibles</value>
+  </data>
+  <data name="HomeWhyCardTitle3" xml:space="preserve">
+    <value>Prestation Efficace et Fiable</value>
+  </data>
+  <data name="HomeWhyCardTitle4" xml:space="preserve">
+    <value>Collaborative Partnerships</value>
+  </data>
+  <data name="HomeWhyTitle" xml:space="preserve">
+    <value>Pourquoi Choisir Softxpertise ?</value>
+  </data>
+  <data name="PrivacyPolicyPage" xml:space="preserve">
+    <value>Politique de confidentialité</value>
+  </data>
+  <data name="ServiceCardButton" xml:space="preserve">
+    <value>Obtenir un devis</value>
+  </data>
+  <data name="ServiceCardSubtitle1" xml:space="preserve">
+    <value>Des solutions rapides, modernes et robustes, parfaitement adaptées à vos besoins numériques.</value>
+  </data>
+  <data name="ServiceCardSubtitle2" xml:space="preserve">
+    <value>Transformez vos flux de travail avec des outils logiciels puissants et personnalisés.</value>
+  </data>
+  <data name="ServiceCardSubtitle3" xml:space="preserve">
+    <value>Évaluez, optimisez et sécurisez vos systèmes d'information.</value>
+  </data>
+  <data name="ServiceCardSubtitle4" xml:space="preserve">
+    <value>Construire les bases de solutions intelligentes.</value>
+  </data>
+  <data name="ServiceCardSubtitle5" xml:space="preserve">
+    <value>Optimisez vos processus, réduisez les tâches manuelles et gagnez en efficacité.</value>
+  </data>
+  <data name="ServiceCardText1" xml:space="preserve">
+    <value>En exploitant Blazor et .NET, nous développons des applications web alliant &lt;strong&gt;performance optimale&lt;/strong&gt;, &lt;strong&gt;interfaces modernes&lt;/strong&gt; et &lt;strong&gt;architecture évolutive&lt;/strong&gt;. Que vous ayez besoin d’outils interactifs, de sites dynamiques ou de portails internes, nos solutions sont conçues pour répondre précisément à vos besoins tout en garantissant une fiabilité à long terme.</value>
+  </data>
+  <data name="ServiceCardText2" xml:space="preserve">
+    <value>Nous sommes spécialisés dans le développement &lt;strong&gt;d'applications cloud sur mesure&lt;/strong&gt; conçues pour répondre à vos défis et objectifs spécifiques. Que vous ayez besoin d’un **outil métier** pour optimiser vos opérations ou d’une &lt;strong&gt;plateforme SaaS (Software-as-a-Service)&lt;/strong&gt; complète, nos solutions allient &lt;strong&gt;évolutivité&lt;/strong&gt;, &lt;strong&gt;performance&lt;/strong&gt; et &lt;strong&gt;facilité d’utilisation&lt;/strong&gt;. Nous transformons vos idées en logiciels fiables et prêts pour l’avenir.</value>
+  </data>
+  <data name="ServiceCardText3" xml:space="preserve">
+    <value>Chez Softxpertise, nous réalisons des &lt;strong&gt;audits complets de vos systèmes d'information&lt;/strong&gt; afin d’évaluer leur performance, leur sécurité et leur efficacité. Grâce à une analyse approfondie de vos pratiques actuelles, nous identifions les axes d’amélioration, éliminons les vulnérabilités et veillons à ce que vos systèmes soient conformes aux &lt;strong&gt;normes du secteur&lt;/strong&gt; et aux &lt;strong&gt;meilleures pratiques&lt;/strong&gt;.</value>
+  </data>
+  <data name="ServiceCardText4" xml:space="preserve">
+    <value>Chez Softxpertise, nous développons activement notre expertise en &lt;strong&gt;machine learning&lt;/strong&gt; avec &lt;strong&gt;ML.NET&lt;/strong&gt;, le framework de Microsoft pour intégrer l’intelligence artificielle dans les applications. Notre objectif est d’exploiter cette technologie pour créer des &lt;strong&gt;outils intelligents&lt;/strong&gt; qui améliorent la prise de décision et automatisent des tâches complexes à l’avenir.</value>
+  </data>
+  <data name="ServiceCardUpdateButton" xml:space="preserve">
+    <value>Restez informé</value>
+  </data>
+  <data name="ServicePage" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="ServiceTitle" xml:space="preserve">
+    <value>Nos Services</value>
+  </data>
+  <data name="ServiceTitleText" xml:space="preserve">
+    <value>Chez Softxpertise, nous nous spécialisons dans la création de solutions qui donnent vie à votre transformation numérique. Découvrez nos services pour répondre à vos besoins uniques.</value>
+  </data>
+</root>

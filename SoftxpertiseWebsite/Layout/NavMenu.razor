@@ -1,4 +1,12 @@
-﻿<div class="navbar navbar-dark">
+﻿@using Microsoft.Extensions.Localization
+@using Softxpertise.Website.Resources
+@using System.Globalization
+
+@inject IJSRuntime JSRuntime
+@inject IStringLocalizer<TextualLanguage> Localizer
+@inject NavigationManager Navigation
+
+<div class="navbar navbar-dark">
     <div class="container-fluid">
 		<a class="navbar-brand" href=""> 
 			@* Displaying the white logo directly in SVG *@
@@ -44,6 +52,14 @@
 			</svg>
 			@* Displaying the white logo directly in SVG end *@
 		</a>
+		<div class="language-selector ls-mobile">
+			<select @bind="Culture">
+				@foreach (var culture in supportedCultures)
+				{
+					<option value="@culture">@culture.DisplayName</option>
+				}
+			</select>
+		</div>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,19 +70,27 @@
     <nav class="flex-row">
         <div class="nav-item">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+				<span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> @Localizer["HomePage"]
             </NavLink>
         </div>
         <div class="nav-item">
             <NavLink class="nav-link" href="services">
-				<span class="bi bi-gear d-flex align-items-center" aria-hidden="true"></span> Services
+				<span class="bi bi-gear d-flex align-items-center" aria-hidden="true"></span> @Localizer["ServicePage"]
             </NavLink>
         </div>
         <div class="nav-item">
 			<NavLink class="nav-link" href="contact">
-				<span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Contact Us
+				<span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> @Localizer["ContactPage"]
             </NavLink>
         </div>
+		<div class="language-selector ls-desktop">
+			<select @bind="Culture">
+				@foreach (var culture in supportedCultures)
+				{
+					<option value="@culture">@culture.DisplayName</option>
+				}
+			</select>
+		</div>
     </nav>
 </div>
 
@@ -79,4 +103,25 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
+	private CultureInfo[] supportedCultures = new[]
+	{
+		new CultureInfo("en-US"),
+		new CultureInfo("fr-FR"),
+	};
+
+	private CultureInfo Culture
+	{
+		get => CultureInfo.CurrentCulture;
+		set
+		{
+			if (CultureInfo.CurrentCulture != value)
+			{
+				var js = (IJSInProcessRuntime)JSRuntime;
+				js.InvokeVoid("blazorCulture.set", value.Name);
+
+				Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+			}
+		}
+	}
 }
