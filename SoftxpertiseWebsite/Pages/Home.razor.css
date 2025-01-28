@@ -1,10 +1,10 @@
 ﻿/* #region Class */
 
 .introduction {
-    /*background-image: url('images/background_home.svg');*/
-    /*background-position: center; /* Centre l'image dans la section */
-  /*  background-repeat: no-repeat; /* Évite la répétition de l'image */
-  /*  background-size: cover; /* Ajuste l'image pour qu'elle remplisse la section */
+    background-image: url('images/background_home.svg');
+    background-position: center; /* Centre l'image dans la section */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-size: cover; /* Ajuste l'image pour qu'elle remplisse la section */
     color: black; /* Pour garantir que le texte est lisible */
     padding: 100px 0; /* Ajoute un espacement vertical */
     position: relative; /* Utile si tu veux ajouter des éléments par-dessus */
