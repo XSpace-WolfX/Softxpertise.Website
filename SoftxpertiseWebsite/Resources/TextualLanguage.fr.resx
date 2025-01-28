@@ -127,6 +127,9 @@
     <value>Audit des Systèmes Informatiques et Analyse des Meilleures Pratiques</value>
   </data>
   <data name="CardTitle4" xml:space="preserve">
+    <value>Automatisation et Intégration d'API</value>
+  </data>
+  <data name="CardTitle5" xml:space="preserve">
     <value>Explorer l’IA avec ML.NET</value>
   </data>
   <data name="ContactButton" xml:space="preserve">
@@ -175,10 +178,10 @@
     <value>Sécurisez et optimisez vos systèmes informatiques grâce à nos audits approfondis et nos recommandations basées sur les meilleures pratiques. Assurez le bon fonctionnement de votre entreprise.</value>
   </data>
   <data name="HomeCardText4" xml:space="preserve">
-    <value>Déployez le potentiel de l’intelligence artificielle grâce à nos solutions innovantes basées sur ML.NET. Automatisez des tâches et améliorez la prise de décision sans effort.</value>
+    <value>Nous optimisons vos opérations en intégrant des API et en automatisant les tâches répétitives, garantissant une communication fluide entre vos outils et une gestion plus performante de votre activité.</value>
   </data>
   <data name="HomeCardText5" xml:space="preserve">
-    <value>Nous optimisons vos opérations en intégrant des API et en automatisant les tâches répétitives, garantissant une communication fluide entre vos outils et une gestion plus performante de votre activité.</value>
+    <value>Déployez le potentiel de l’intelligence artificielle grâce à nos solutions innovantes basées sur ML.NET. Automatisez des tâches et améliorez la prise de décision sans effort.</value>
   </data>
   <data name="HomeContactButton" xml:space="preserve">
     <value>Contactez-nous</value>
@@ -241,10 +244,10 @@
     <value>Évaluez, optimisez et sécurisez vos systèmes d'information.</value>
   </data>
   <data name="ServiceCardSubtitle4" xml:space="preserve">
-    <value>Construire les bases de solutions intelligentes.</value>
+    <value>Optimisez vos processus, réduisez les tâches manuelles et gagnez en efficacité.</value>
   </data>
   <data name="ServiceCardSubtitle5" xml:space="preserve">
-    <value>Optimisez vos processus, réduisez les tâches manuelles et gagnez en efficacité.</value>
+    <value>Construire les bases de solutions intelligentes.</value>
   </data>
   <data name="ServiceCardText1" xml:space="preserve">
     <value>En exploitant Blazor et .NET, nous développons des applications web alliant &lt;strong&gt;performance optimale&lt;/strong&gt;, &lt;strong&gt;interfaces modernes&lt;/strong&gt; et &lt;strong&gt;architecture évolutive&lt;/strong&gt;. Que vous ayez besoin d’outils interactifs, de sites dynamiques ou de portails internes, nos solutions sont conçues pour répondre précisément à vos besoins tout en garantissant une fiabilité à long terme.</value>
@@ -256,6 +259,9 @@
     <value>Chez Softxpertise, nous réalisons des &lt;strong&gt;audits complets de vos systèmes d'information&lt;/strong&gt; afin d’évaluer leur performance, leur sécurité et leur efficacité. Grâce à une analyse approfondie de vos pratiques actuelles, nous identifions les axes d’amélioration, éliminons les vulnérabilités et veillons à ce que vos systèmes soient conformes aux &lt;strong&gt;normes du secteur&lt;/strong&gt; et aux &lt;strong&gt;meilleures pratiques&lt;/strong&gt;.</value>
   </data>
   <data name="ServiceCardText4" xml:space="preserve">
+    <value>Révolutionnez vos flux de travail en connectant vos systèmes et en automatisant les tâches répétitives. Nos services incluent une &lt;strong&gt;intégration fluide des API&lt;/strong&gt; et des solutions d'automatisation sur mesure, conçues pour &lt;strong&gt;optimiser vos processus&lt;/strong&gt;, &lt;strong&gt;réduire les erreurs&lt;/strong&gt; et &lt;strong&gt;augmenter votre productivité&lt;/strong&gt;. Qu'il s'agisse de synchroniser des outils ou de créer des flux de travail personnalisés, nous veillons à ce que votre entreprise fonctionne de manière efficace et harmonieuse.</value>
+  </data>
+  <data name="ServiceCardText5" xml:space="preserve">
     <value>Chez Softxpertise, nous développons activement notre expertise en &lt;strong&gt;machine learning&lt;/strong&gt; avec &lt;strong&gt;ML.NET&lt;/strong&gt;, le framework de Microsoft pour intégrer l’intelligence artificielle dans les applications. Notre objectif est d’exploiter cette technologie pour créer des &lt;strong&gt;outils intelligents&lt;/strong&gt; qui améliorent la prise de décision et automatisent des tâches complexes à l’avenir.</value>
   </data>
   <data name="ServiceCardUpdateButton" xml:space="preserve">

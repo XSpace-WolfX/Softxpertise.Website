@@ -127,10 +127,10 @@
     <value>IT Systems Audit and Best Practice Analysis</value>
   </data>
   <data name="CardTitle4" xml:space="preserve">
-    <value>Exploring AI with ML.NET</value>
+    <value>Automation and API Integration</value>
   </data>
   <data name="CardTitle5" xml:space="preserve">
-    <value>Automation and API Integration</value>
+    <value>Exploring AI with ML.NET</value>
   </data>
   <data name="ContactButton" xml:space="preserve">
     <value>Send</value>
@@ -178,10 +178,10 @@
     <value>Secure and optimize your IT systems with our in-depth audits and best practice recommendations. Ensure your business runs smoothly.</value>
   </data>
   <data name="HomeCardText4" xml:space="preserve">
-    <value>Unlock the potential of AI with our innovative solutions powered by ML.NET. Automate tasks and enhance decision-making effortlessly.</value>
+    <value>We streamline your operations by integrating APIs and automating repetitive tasks, ensuring seamless communication between your tools and optimizing business processes.</value>
   </data>
   <data name="HomeCardText5" xml:space="preserve">
-    <value>We streamline your operations by integrating APIs and automating repetitive tasks, ensuring seamless communication between your tools and optimizing business processes.</value>
+    <value>Unlock the potential of AI with our innovative solutions powered by ML.NET. Automate tasks and enhance decision-making effortlessly.</value>
   </data>
   <data name="HomeContactButton" xml:space="preserve">
     <value>Get in Touch</value>
@@ -244,10 +244,10 @@
     <value>Evaluate, optimize, and secure your information systems.</value>
   </data>
   <data name="ServiceCardSubtitle4" xml:space="preserve">
-    <value>Building the foundation for intelligent solutions.</value>
+    <value>Optimize your workflows, reduce manual tasks, and boost efficiency.</value>
   </data>
   <data name="ServiceCardSubtitle5" xml:space="preserve">
-    <value>Optimize your workflows, reduce manual tasks, and boost efficiency.</value>
+    <value>Building the foundation for intelligent solutions.</value>
   </data>
   <data name="ServiceCardText1" xml:space="preserve">
     <value>By leveraging Blazor and .NET, we deliver web applications that combine &lt;strong&gt;optimal performance&lt;/strong&gt;, &lt;strong&gt;modern interfaces&lt;/strong&gt;, and &lt;strong&gt;scalable architecture&lt;/strong&gt;. Whether you need interactive tools, dynamic websites, or internal portals, our solutions are designed to meet your exact needs while ensuring long-term reliability.</value>
@@ -259,10 +259,10 @@
     <value>At Softxpertise, we provide comprehensive &lt;strong&gt;audits of your information systems&lt;/strong&gt; to assess performance, security, and efficiency. Through an in-depth analysis of your current practices, we identify areas for improvement, eliminate vulnerabilities, and ensure your systems align with &lt;strong&gt;industry standards&lt;/strong&gt; and &lt;strong&gt;best practices&lt;/strong&gt;.</value>
   </data>
   <data name="ServiceCardText4" xml:space="preserve">
-    <value>At Softxpertise, we are actively developing our expertise in &lt;strong&gt;machine learning&lt;/strong&gt; with &lt;strong&gt;ML.NET&lt;/strong&gt;, Microsoft's framework for integrating AI into applications. Our goal is to leverage this technology to create &lt;strong&gt;smart tools&lt;/strong&gt; that enhance decision-making and automate complex tasks in the future.</value>
+    <value>Revolutionize your workflows by connecting your systems and automating repetitive tasks. Our services include &lt;strong&gt;seamless API integration&lt;/strong&gt; and tailored automation solutions, designed to &lt;strong&gt;optimize processes&lt;/strong&gt;, &lt;strong&gt;reduce errors&lt;/strong&gt;, and &lt;strong&gt;boost productivity&lt;/strong&gt;. Whether it's synchronizing tools or building custom workflows, we ensure your business operates efficiently and cohesively.</value>
   </data>
   <data name="ServiceCardText5" xml:space="preserve">
-    <value>Revolutionize your workflows by connecting your systems and automating repetitive tasks. Our services include seamless API integration and tailored automation solutions, designed to optimize processes, reduce errors, and boost productivity. Whether it's synchronizing tools or building custom workflows, we ensure your business operates efficiently and cohesively.</value>
+    <value>At Softxpertise, we are actively developing our expertise in &lt;strong&gt;machine learning&lt;/strong&gt; with &lt;strong&gt;ML.NET&lt;/strong&gt;, Microsoft's framework for integrating AI into applications. Our goal is to leverage this technology to create &lt;strong&gt;smart tools&lt;/strong&gt; that enhance decision-making and automate complex tasks in the future.</value>
   </data>
   <data name="ServiceCardUpdateButton" xml:space="preserve">
     <value>Stay Updated</value>
