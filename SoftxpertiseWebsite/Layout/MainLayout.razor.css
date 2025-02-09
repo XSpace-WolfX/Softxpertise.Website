@@ -19,12 +19,12 @@ svg {
 }
 
 .footer a {
-    color: #1eb1c4; /* Lien bleu clair */
+    color: #1eb1c4; /* Light blue link */
     transition: color 0.3s ease;
 }
 
 .footer a:hover {
-    color: #1595a8; /* Couleur au survol */
+    color: #1595a8; /* Hover color */
 }
 
 .footer h5 {
@@ -38,7 +38,12 @@ svg {
 }
 
 .footer .padding {
-    padding-right: 7rem;
+    padding-right: 0;
+}
+
+.footer .row > div {
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .menu {
@@ -62,33 +67,10 @@ svg {
 }
 
 .social-icons i:hover {
-    transform: scale(1.2); /* Agrandissement au survol */
+    transform: scale(1.2); /* Enlargement on hover */
 }
 
 /* #endregion */
-
-/* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px) {
-}
-
-@media (max-width: 768px) {
-    /* #region Class */
-
-    .footer .padding {
-        padding-right: 0;
-    }
-
-    .footer .row > div {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    /* #endregion */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px) {
-}
 
 @media (min-width: 641px) {
     /* #region Class */
@@ -110,12 +92,20 @@ svg {
     /* #endregion */
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* tablet and up */
 @media (min-width: 768px) {
-}
+    /* #region Class */
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
+    .footer .padding {
+        padding-right: 7rem;
+    }
+
+    .footer .row > div {
+        margin-bottom: initial;
+        text-align: initial;
+    }
+
+    /* #endregion */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
